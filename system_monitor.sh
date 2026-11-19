@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-PROJECT_DIR="$HOME/health-monitor"
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_FILE="$PROJECT_DIR/health.log"
 ALERT_SCRIPT="$PROJECT_DIR/alert_bot.py"
 DISK_THRESHOLD=80
